@@ -17,8 +17,8 @@ const quicksand = Quicksand({
 });
 
 export const metadata: Metadata = {
-  title: "Leonardo Bagus Utomo - Portofolio",
-  description: "",
+  title: "Leonardo Bagus Utomo | Fullstack Developer & Front End Developer Portfolio",
+  description: "Portfolio of Leonardo Bagus Utomo — Fullstack Developer & Front End Developer specializing in React.js, Spring Boot, and modern web technologies. Based in Yogyakarta, Indonesia. Open for opportunities.",
 };
 
 export default function RootLayout({
