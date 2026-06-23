@@ -1,11 +1,19 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Lora, Quicksand } from "next/font/google";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+const lora = Lora({
+  variable: "--font-lora",
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],  
+  weight: ["400", "500", "600", "700"],
+});
+
+const quicksand = Quicksand({
+  variable: "--font-quicksand",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -21,9 +29,14 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${poppins.variable} h-full antialiased`}
+      className={`${lora.variable} ${quicksand.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <TooltipProvider>{children}</TooltipProvider>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
