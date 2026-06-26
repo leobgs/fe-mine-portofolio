@@ -49,7 +49,7 @@ export function ExperienceSection({ experiences }: ExperienceSectionProps) {
                     )}
                   </Badge>
                 </div>
-                <p className="text-muted-foreground text-sm leading-relaxed mt-3 font-sans">
+                <p className="text-foreground text-sm leading-relaxed mt-3 font-sans">
                   {exp.description}
                 </p>
               </div>

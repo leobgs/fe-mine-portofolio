@@ -16,15 +16,15 @@ export function Footer({ contact }: FooterProps) {
           <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-6">
             Contact
           </h2>
-          <p className="text-muted-foreground text-sm md:text-base leading-relaxed mb-8 w-full">
+          <p className="text-foreground text-sm md:text-base leading-relaxed mb-8 w-full">
             {contact.bio}
           </p>
           <address className="not-italic mb-8">
             <a
               href={`mailto:${contact.email}`}
-              className="inline-flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group"
+              className="inline-flex items-center gap-3 text-foreground hover:text-foreground transition-colors group"
             >
-              <span className="flex items-center justify-center w-10 h-10 rounded-full bg-card border border-border text-muted-foreground group-hover:border-foreground transition-colors shadow-sm">
+              <span className="flex items-center justify-center w-10 h-10 rounded-full bg-card border border-border text-foreground group-hover:border-foreground transition-colors shadow-sm">
                 <svg
                   className="w-4 h-4"
                   fill="none"
@@ -56,7 +56,7 @@ export function Footer({ contact }: FooterProps) {
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex w-10 h-10 items-center justify-center rounded-full bg-card border border-border text-muted-foreground hover:text-primary hover:border-primary/50 transition-all active:scale-95 shadow-sm"
+                    className="flex w-10 h-10 items-center justify-center rounded-full bg-card border border-border text-foreground hover:text-primary hover:border-primary/50 transition-all active:scale-95 shadow-sm"
                     title={social.platform}
                   >
                     <Icon className="w-4 h-4" />

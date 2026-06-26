@@ -24,6 +24,8 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
             >
               <div className="relative aspect-4/3 w-full bg-muted overflow-hidden">
                 <Image
+                  loading="eager"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   src={project.imageUrl}
                   alt={`${project.title} Cover`}
                   fill

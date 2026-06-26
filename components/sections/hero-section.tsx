@@ -23,10 +23,10 @@ export function HeroSection({ profile }: HeroSectionProps) {
         </AvatarFallback>
       </Avatar>
 
-      <h1 className="text-3xl sm:text-5xl md:text-5xl font-serif font-bold tracking-tight max-w-3xl leading-tight mb-4 text-foreground">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold tracking-tight max-w-3xl leading-tight mb-4 text-foreground">
         {profile.heading}
       </h1>
-      <p className="text-muted-foreground text-base sm:text-lg max-w-2xl leading-relaxed mb-6 font-sans">
+      <p className="text-foreground text-base sm:text-lg max-w-2xl leading-relaxed mb-6 font-sans">
         {profile.bio}
       </p>
 
